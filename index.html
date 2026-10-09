@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moayad Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="nav">
+      <div>
+        <i class="fa-solid fa-bolt"></i>
+        <p>Moayad.</p>
+      </div>
+      <div>
+        <ul>
+          <li>Home</li>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#skills-para">Skills</a></li>
+          <li><a href="#proj">Projects</a></li>
+          <li><a href="#contact-me">Contact</a></li>
+          <li><select name="mode" class="form-select form-select-sm" aria-label=".form-select-sm example" id="mode" onchange="chandeMode(this)">
+            <option selected>Change mode</option>
+            <!-- &#9728;&#65039 sun emojy -->
+            <option value="light">
+              Light &#9728;&#65039
+            </option>
+            <!-- &#127761; moon emojy -->
+            <option value="dark" >
+              Dark &#127761;
+            </option>
+          </select></li>
+        
+        </ul>
+      </div>
+    </nav>
+
+    <div class="home">
+      <div id="info">
+        <p id="Status">open to work</p>
+        <h1>
+          Hi, I'm <span id="myname">Moayad</span>. <br />I build the web
+          <br />with clean, working code.
+        </h1>
+        <p>
+          Full stack developer in training at Axsos Academy. <br />Front end
+          (HTML, CSS, JavaScript) done, <br />now building the back end.
+        </p>
+
+        <div id="hlink">
+          <button><a href="#proj">View my projects</a></button>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <img
+          src="f16b51c8-91e0-456d-beae-106af5274072.png"
+          class="card-img-top"
+          alt="Moayad"
+        />
+      </div>
+    </div>
+
+    <div class="about-me">
+      <p id="about-me">01 About Me</p>
+      <hr />
+      <h1>Why I code.</h1>
+      <p>
+        I love the moment a hard problem finally clicks, and programming gives
+        me that every day. I came from electrical engineering, which taught me
+        to debug patiently and read the docs.
+      </p>
+      <p>
+        I finished the front end track at Axsos Academy's full stack bootcamp
+        and I'm now learning the back end, so I can build complete apps from the
+        screen to the database.
+      </p>
+      <table>
+        <tr>
+          <th>WHAT I BUILD</th>
+          <th>HOW</th>
+        </tr>
+        <tr>
+          <td>Responsive layouts</td>
+          <td>HTML, CSS, Flexbox, Grid</td>
+        </tr>
+        <tr>
+          <td>Interactive pages</td>
+          <td>JavaScript and the DOM</td>
+        </tr>
+        <tr>
+          <td>Back end apps</td>
+          <td>Python and databases</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="skills-part">
+      <div>
+        <p id="skills-para">02 SKILLS</p>
+        <hr />
+        <h1>What I work with.</h1>
+        <p>What I use today and what I'm learning next.</p>
+      </div>
+
+      <div class="section">
+        <section>
+          <p>Front end</p>
+          <br />
+          <p>HTML5</p>
+          <p>CSS3</p>
+          <p>JavaScript</p>
+          <p>Flexbox</p>
+          <p>Grid</p>
+          <p>Responsive design</p>
+        </section>
+        <section>
+          <p>Tools</p>
+          <br />
+          <p>Git</p>
+          <p>GitHub</p>
+          <p>VS Code</p>
+        </section>
+        <section>
+          <p>Learning now</p>
+          <br />
+          <p>Python</p>
+          <p>Node.js</p>
+          <p>Databases</p>
+          <p>Algorithms</p>
+          <p>Data structures</p>
+        </section>
+      </div>
+    </div>
+
+    <div class="projects">
+      <div>
+        <p id="proj">03 PROJECTS</p>
+        <hr />
+        <h1>Things I've built.</h1>
+        <p>Front end projects from Axsos Academy.</p>
+      </div>
+
+      <div class="projects-example">
+        <div class="project-card">
+          <img
+            src="imeges/Screenshot 2026-10-06 222907.png"
+            alt="car washing service website"
+          />
+          <h3>Car Washing Service</h3>
+          <p class="project-tags">HTML · CSS · JavaScript</p>
+          <div class="project-links">
+            <a href="practicale exam\index.html" target="_blank">
+              <i class="fa-solid fa-eye"></i>Live demo
+            </a>
+            <a
+              class="link-outline"
+              href="https://github.com/MoayadAttalah/html-css-js/tree/3c1a6e95667c67410e545e770f5d9686f3665cf9/practicale%20exam"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i>Code
+            </a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="imeges/dojswether.png" alt="weather station website" />
+          <h3>Weather Station</h3>
+          <p class="project-tags">HTML · CSS · JavaScript</p>
+          <div class="project-links">
+            <a href="dojoWeather\index.html" target="_blank">
+              <i class="fa-solid fa-eye"></i>Live demo
+            </a>
+            <a
+              class="link-outline"
+              href="https://github.com/MoayadAttalah/html-css-js/tree/3c1a6e95667c67410e545e770f5d9686f3665cf9/dojoWeather"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i>Code
+            </a>
+          </div>
+        </div>
+        <div class="project-card">
+          <img
+            src="imeges/profile page.png"
+            alt="Making Connections profile page"
+          />
+          <h3>Making Connections</h3>
+          <p class="project-tags">HTML · CSS · JavaScript</p>
+          <div class="project-links">
+            <a href="making connections\index.html" target="_blank">
+              <i class="fa-solid fa-eye"></i>Live demo
+            </a>
+            <a
+              class="link-outline"
+              href="https://github.com/MoayadAttalah/html-css-js/tree/3c1a6e95667c67410e545e770f5d9686f3665cf9/making%20connections"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i>Code
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="Contact">
+      <div id="contact-me">
+        <p>04 CONTACT</p>
+        <hr />
+      </div>
+
+      <h1>Let's build something together.</h1>
+      <p>
+        I'm looking for my first full stack developer role. Have an opening or
+        want to say hi? My inbox is open.
+      </p>
+      <div>
+        <button>
+          <a href="https://github.com/MoayadAttalah" target="_blank">github</a>
+          <i class="fa-brands fa-github"></i>
+        </button>
+        <button>
+          <a
+            href="https://www.linkedin.com/in/moayad-attalah-010717197/"
+            target="_blank"
+            >Linked-in</a
+          >
+          <i class="fa-brands fa-square-linkedin"></i>
+        </button>
+        <button>
+          <a href="mailto:moayadattalah@gmail.com" target="_blank">Gmail</a>
+          <i class="fa-solid fa-envelope"></i>
+        </button>
+      </div>
+    </div>
+    <div class="scrolltotop">
+      <a href="#nav"
+        ><i
+          class="fa-solid fa-angles-up fa-2xl"
+          style="color: rgb(255, 212, 59)"
+        ></i
+      ></a>
+    </div>
+    <script src="script.js"></script>
+
+   
+  </body>
+</html>
