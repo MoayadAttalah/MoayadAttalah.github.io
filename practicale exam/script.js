@@ -5,7 +5,7 @@ button[1].addEventListener("click", function hideButton() {
 });
 
 function replaceImg(parmeter) {
-  parmeter.src = "/imges/anothercar.jpg";
+  parmeter.src = "imges/anothercar.jpg";
 }
 let appointment = document.querySelectorAll(".appointment");
 
