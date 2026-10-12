@@ -375,6 +375,7 @@ button i {
   position: sticky;
   bottom: 0;
   float: right;
+  transform: translate(150px, -30px);
 }
 
 .card-group {
